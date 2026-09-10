@@ -1,1 +1,35 @@
+<header id="header">SVG Library</header>
+<div id="galleryContainer">
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+  <div class="imageContainer"></div>
+</div>
 
+<style>
+  #header
+  {
+    display: flex;
+    height: 100px; width: 100%;
+    background-color: darkslateblue; color: white; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7vw;
+    margin-bottom: 10px; text-align: center; justify-content: center; align-items: center;
+  }
+
+  #galleryContainer
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .imageContainer{height: 100px; width: 100px; background-color: slateblue;}
+</style>
