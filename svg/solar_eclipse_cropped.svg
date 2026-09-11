@@ -1,0 +1,17 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <title>Solar Eclipse</title>
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g id="svg_5">
+   <ellipse fill="#FFF093" cx="150" cy="150" id="svg_1" rx="120" ry="120" stroke-width="0" stroke="#000" filter="url(#svg_1_blur)" opacity="0.77"/>
+   <ellipse fill="#ef8113" cx="150" cy="150" id="svg_3" rx="130" ry="130" stroke-width="0" stroke="#000" opacity="0.5" filter="url(#svg_1_blur)"/>
+   <ellipse fill="#FFE7A2" stroke="#000" cx="150" cy="150" id="svg_2" rx="95" ry="95" stroke-width="0"/>
+   <ellipse fill="#161616" stroke="#000" cx="150" cy="150" id="svg_4" rx="93" ry="94" stroke-width="0"/>
+  </g>
+ </g>
+ <defs>
+  <filter id="svg_1_blur" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+  </filter>
+ </defs>
+</svg>
