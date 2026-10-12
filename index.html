@@ -96,5 +96,41 @@
 </style>
 
 <script>
-  /* TODO: Dynamic asset loading */
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleryContainer = document.getElementById("galleryContainer");
+    galleryContainer.innerHTML = "";
+
+    fetch("./svg-manifest.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Manifest could not be loaded!");
+        return response.json();
+      })
+      .then(manifestData => {
+        Object.entries(manifestData).forEach(([id, metadata]) => {
+          const panel = document.createElement("div");
+          panel.className = "imageContainer";
+
+          if (metadata["aspect-ratio"]) {
+            const ratio = metadata["aspect-ratio"].replace(":", "/");
+            panel.style.aspectRatio = ratio;
+          }
+
+          const svg = document.createElement("img");
+          svg.src = `svg/${metadata.filename}`;
+          svg.alt = metadata.name;
+
+          const tooltip = document.createElement("div");
+          tooltip.className = "imageTooltip";
+          tooltip.textContent = metadata.name;
+
+          panel.appendChild(svg);
+          panel.appendChild(tooltip);
+          galleryContainer.appendChild(panel);
+        })
+      })
+      .catch(err => {
+        console.error("Error building layout!");
+        galleryContainer.innerHTML = `<p style="font-family: sans-serif"> Failed to load library.</p>`;
+      })
+  });
 </script>
