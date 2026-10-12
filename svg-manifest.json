@@ -1,1 +1,36 @@
-
+{
+  "black-hole-0": {
+    "filename": "black_hole.svg",
+    "name": "Black Hole",
+    "category": "Astronomy",
+    "tags": ["black hole", "space", "cosmos"],
+    "style": {
+      "color-type": "polychrome",
+      "primary-color": "orange",
+      "hex-colors": ["#fc8353", "#f99959", "#000000", "#ffffff"],
+      "fill-type": "solid",
+      "shading": "flat"
+    },
+    "aspect-ratio": "1:1",
+    "grid-size": "345x345",
+    "view-box": "0 0 345 345",
+    "creator": "EpicAMPlifier"
+  },
+  "black-hole-1": {
+    "filename": "black_hole_bw-da.svg",
+    "name": "Black Hole",
+    "category": "Astronomy",
+    "tags": ["black hole", "space", "cosmos"],
+    "style": {
+      "color-type": "bw",
+      "primary-color": "bw",
+      "hex-colors": ["#000000", "#ffffff"],
+      "fill-type": "solid",
+      "shading": "flat"
+    },
+    "aspect-ratio": "1:1",
+    "grid-size": "358x358",
+    "view-box": "0 0 358 358",
+    "creator": "BDA"
+  }
+}
