@@ -32,5 +32,39 @@
     "grid-size": "358x358",
     "view-box": "0 0 358 358",
     "creator": "BDA"
+  },
+    "solar-eclipse-0": {
+    "filename": "solar_eclipse.svg",
+    "name": "Solar Eclipse",
+    "category": "Astronomy",
+    "tags": ["sun", "moon", "solar eclipse", "corona", "space"],
+    "style": {
+      "color-type": "polychrome",
+      "primary-color": "orange",
+      "hex-colors": ["#ef8113", "#fff093", "#ffe7A2", "#161616"],
+      "fill-type": "solid",
+      "shading": "glow"
+    },
+    "aspect-ratio": "1:1",
+    "grid-size": "300x300",
+    "view-box": "0 0 300 300",
+    "creator": "EpicAMPlifier"
+  },
+  "abstract-bolt-0": {
+    "filename": "abstract_bolt.svg",
+    "name": "Abstract Bolt",
+    "category": "Sci-Fi",
+    "tags": ["bolt", "lightning", "lightning bolt", "energy", "power", "electricity", "abstract", "speed", "symbol"],
+    "style": {
+      "color-type": "monochrome",
+      "primary-color": "blue",
+      "hex-colors": ["#b6c7ea"],
+      "fill-type": "solid",
+      "shading": "flat"
+    },
+    "aspect-ratio": "1:1",
+    "grid-size": "200x200",
+    "view-box": "0 0 200 200",
+    "creator": "EpicAMPlifier"
   }
 }
